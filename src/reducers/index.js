@@ -1,5 +1,6 @@
-const { combineReducers } = require("redux");
+import authReducer from "./authReducer";
 
+const { combineReducers } = require("redux");
 export default combineReducers({
-    replaceMe:()=>'working'
+    auth:authReducer
 })
