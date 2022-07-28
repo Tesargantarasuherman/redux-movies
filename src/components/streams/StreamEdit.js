@@ -23,6 +23,8 @@ class StreamEdit extends Component {
     return(
       <div> 
         <h3>Edit a Stream</h3>
+        {/* _.pick only get value initialize from object */}
+        {/* initialValues from react form  */}
         <StreamForm initialValues={_.pick(this.props.stream,'title','description')} onSubmit={this.onSubmit}/>
       </div>
     )
